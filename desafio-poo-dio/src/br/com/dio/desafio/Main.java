@@ -1,9 +1,11 @@
 package br.com.dio.desafio;
 
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
 
@@ -18,6 +20,12 @@ public class Main {
         curso2.setDescricao("Descrevendo algo para o curso dois");
         curso2.setCargaHoraria(15);
 
+        Conteudo conteudo = new Curso();
+
+        Conteudo conteudo1 = new Mentoria();
+
+       // List<String>
+
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Mentoria de Java");
         mentoria1.setDescricao("Descrição para mentoria de Java");
@@ -27,5 +35,6 @@ public class Main {
         System.out.println(curso1 + "\n");
         System.out.println(curso2 + "\n");
         System.out.println(mentoria1);
+
     }
 }
